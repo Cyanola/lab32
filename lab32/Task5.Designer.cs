@@ -1,6 +1,6 @@
 ﻿namespace lab32
 {
-    partial class Form2
+    partial class Task5
     {
         /// <summary>
         /// Required designer variable.
@@ -51,7 +51,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(-1, 254);
+            this.button2.Location = new System.Drawing.Point(8, 254);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(389, 49);
             this.button2.TabIndex = 1;
@@ -117,7 +117,7 @@
             this.label3.Size = new System.Drawing.Size(0, 29);
             this.label3.TabIndex = 5;
             // 
-            // Form2
+            // Task5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -128,7 +128,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form2";
+            this.Name = "Task5";
             this.Text = "Задание 5";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
