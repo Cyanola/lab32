@@ -23,19 +23,19 @@ namespace Lab31
                     //    {
                     //        break;
                     //    }
-                    case 1:
+                    case 2:
                         {
                             Z1();
                             Console.ReadKey();
                             break;
                         }
-                    case 2:
+                    case 3:
                         {
                             Z2();
                             Console.ReadKey();
                             break;
                         }
-                    case 3:
+                    case 4:
                         {
                             Z3();
                             Console.ReadKey();
