@@ -26,24 +26,24 @@ namespace lab32
             List <int> list = new List<int> ();
             List<int> x = new List<int>();
             //    List <string> strings = new List <string> ();
-            for (int i = 0; i < x.Count; i++)
+            for (int i = 0; i < x.ToString().Length; i++)
             {
-                x[i] = int.Parse(v);
+                x[i] = Convert.ToInt32(numericUpDown1.Value);
                 {
-                    for (int d = 0; d < x.Count; d++) //цикл по длине числа в виде строки
+                    for (int d = 0; d < x.Count; d++) //цикл по длине числа
                     {
                         try
                         {
-                            int a = int.Parse(x.ToString()); //обратно в целое число
+                            int a = int.Parse(x.ToString()); //разделить цифры в числе
 
-                            if (a % 2 == 0) //если число четное
+                            if (a % 2 == 0) //если цифра четное
                             {
                                 list.Add(x.ToString()[i]);
                             }
                         }
                         catch (Exception error) { continue; }
                     }
-                    label4.Text = list.Count.ToString();
+                    label4.Text = list.Count.ToString();// должно быть количество четных цифр в числе,
                 }
             } 
             double n = 0;

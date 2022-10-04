@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace lab32
 {
-    public partial class Form3 : Form
+    public partial class Task6 : Form
     {
-        public Form3()
+        public Task6()
         {
             InitializeComponent();
         }

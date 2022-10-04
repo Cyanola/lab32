@@ -1,6 +1,6 @@
 ﻿namespace lab32
 {
-    partial class Form5
+    partial class Task8
     {
         /// <summary>
         /// Required designer variable.
