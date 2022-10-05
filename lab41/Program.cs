@@ -55,7 +55,36 @@ namespace lab41
         {
             Random random = new Random();
             double k;
-            k = random.Next();
+            int n; int m;
+            k = random.Next(-10,10);
+            Console.WriteLine("Введите значение n: ");
+            n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите значение m");
+            m = Convert.ToInt32(Console.ReadLine());
+            double[] arr = new double[n];
+            double[,] mas= new double[n, m];
+            Console.WriteLine($"При k = {k}");
+            Console.WriteLine();
+            Console.WriteLine("Одномерный массив: ");
+            Console.WriteLine();
+            for (int i = 0; i < arr.Length; i++) 
+            {
+                arr[i] = Math.Round(Math.Sqrt(Math.Abs(Math.Pow(n, k)/ (Math.Pow((n + 1), k)))),3,MidpointRounding.AwayFromZero);
+                Console.Write($"{arr[i]}  ");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Двумерный массив: ");
+            Console.WriteLine();
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    mas[i,j] = Math.Round(Math.Sqrt(Math.Abs(Math.Pow(n, k) / (Math.Pow((n + 1), k)))),3,MidpointRounding.AwayFromZero);
+                    Console.Write($"{mas[i, j]}  ");
+                }
+                Console.WriteLine();
+            }
         }
         public static void Task2()
         {
