@@ -48,6 +48,13 @@ namespace lab41
                             Console.ReadKey();
                             break;
                         }
+                    default:
+                        {
+                            Console.Clear();
+                            Console.WriteLine("Такого задания не существует!");
+                            Console.ReadKey();
+                            break;
+                        }
                 }
             }
         }
@@ -91,7 +98,7 @@ namespace lab41
            int[] A = new int[10];
            int[] B = new int[10];
             Random rnd = new Random();
-            double sumA = 0, sumB = 0;
+            int sumA = 0, sumB = 0;
             for (int i = 0;i < A.Length; i++)
             {
                 A[i] = rnd.Next(-100,100);
@@ -181,7 +188,7 @@ namespace lab41
                         m = j;
                     }
                 }
-                s = arr[m]; //меняем минимальный элемент местами с элементом с текущим индексом.
+                s = arr[m]; 
                arr[m] = arr[i];
                arr[i] = s;
             }
