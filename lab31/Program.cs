@@ -65,8 +65,10 @@ namespace Lab31
         }
         public static void Z2()
         {
-            int N = 5, K = 25;
+            Random rnd = new Random();
+            int N = rnd.Next(1,10), K = rnd.Next(0,100);
             int i = 0;
+            Console.WriteLine($"При N = {N} и K = {K}");
             while (i < N)
             {
                 Console.Write($" {K},");

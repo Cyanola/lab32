@@ -18,7 +18,7 @@ namespace lab42
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form2());
 
            
         }
@@ -29,35 +29,26 @@ namespace lab42
 
             public string AdminName;
             public string AdminPost;
-            public int workers;
-            public double Area;
-            public int floors;
-            public override string ToString()
-            {
-                return AdminName + " " + AdminPost + " " + workers + " " + Area + " " + floors;
-            }
+            public string workers;
+            public string Area;
+            public string floors;
+           
         }
         public struct Auto
         {
-            public double speed;
+            public string speed;
             public string model;
-            public int weight;
-            public override string ToString()
-            {
-                return speed + " " + model + " " + weight; ; 
-            }
+            public string weight;
+          
         }
             public struct Human
             {
             public string Name;
             public string Lastname;
-            public int Age;
-            public int Height;
+            public string Age;
+            public string Height;
 
-            public override string ToString()
-            {
-                return Name + " " + Lastname + " " + Age + " " + Height;
-            }
+          
         }
 
 
