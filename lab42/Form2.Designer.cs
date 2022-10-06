@@ -55,14 +55,14 @@
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Иван",
-            "Никита",
-            "Данил",
-            "Сергей",
-            "Людмила",
-            "Ольга",
-            "Максим",
-            "Виктор"});
+            "Ivan",
+            "Nikita",
+            "Daniel",
+            "Sergey",
+            "Lyudmila",
+            "Olga",
+            "Maxim",
+            "Victor"});
             this.comboBox1.Location = new System.Drawing.Point(21, 78);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 33);
@@ -73,16 +73,14 @@
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "Петров",
-            "Иванов",
-            "Сидоров",
-            "Черничкин",
-            "Забурдяев",
-            "Фантокин",
-            "Николаев",
-            "Громов",
-            "Артемова",
-            "Корчанова"});
+            "Petrov",
+            "Ivanov",
+            "Sidorov",
+            "Chernichkin",
+            "Nikolaev",
+            "Gromov",
+            "Artemova",
+            "Korchanova"});
             this.comboBox2.Location = new System.Drawing.Point(202, 78);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 33);
@@ -119,12 +117,12 @@
             this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
-            "Менеджер",
-            "Администратор",
-            "Программист",
-            "Директор",
-            "ГенеральныйДиректор",
-            "Секретарь"});
+            "Manager",
+            "Admin",
+            "Programmer",
+            "Director",
+            "GeneralDirector",
+            "Secretar"});
             this.comboBox4.Location = new System.Drawing.Point(202, 207);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(121, 33);
@@ -210,8 +208,8 @@
             this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
-            "Нива",
-            "Жигули",
+            "Niva",
+            "Zhiguli",
             "LadaVesta",
             "LadaGrante",
             "KiaRio",
@@ -280,14 +278,14 @@
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
-            "Иван",
-            "Никита",
-            "Данил",
-            "Сергей",
-            "Людмила",
-            "Ольга",
-            "Максим",
-            "Виктор"});
+            "Ivan",
+            "Nikita",
+            "Daniel",
+            "Sergey",
+            "Lyudmila",
+            "Olga",
+            "Maxim",
+            "Victor"});
             this.comboBox3.Location = new System.Drawing.Point(20, 207);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 33);

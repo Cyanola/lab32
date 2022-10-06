@@ -34,6 +34,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,6 +81,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
@@ -100,6 +102,15 @@
             this.button2.Text = "Ввод данных";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(11, 158);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 16);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "label4";
             // 
             // Form1
             // 
@@ -125,6 +136,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label4;
     }
 }
 

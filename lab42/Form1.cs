@@ -40,17 +40,34 @@ namespace lab42
         public void Output()
         {
            Form2 form = new Form2();
-            for(int i = 0; i < form.Input().GetLength(0); i++)
+            for (int i = 0; i < form.Input()[0].Length; i++)
             {
-                label1.Text = form.Input()[0][i].ToString();
+                if (i == 0)
+                {
+                    label1.Text = form.Input()[0][i].ToString();
+                }
+                if (i == 1)
+                {
+                    label2.Text = form.Input()[0][i].ToString();
+                }
+                if (i == 2)
+                {
+                    label3.Text = form.Input()[0][i].ToString();
+                }
+                if (i == 3)
+                {
+                    label4.Text = form.Input()[0][i].ToString();
+                }
+                //label2.Text = form.Input()[0][i].ToString();
+                //label3.Text = form.Input()[0][i].ToString();
             }
             //foreach(object var in form.Input()[0])
             //{
             //    label1.Text = var.ToString();
 
             //}
-       //    label1.Text = form.Input()[0].ToString();
-          
+            //    label1.Text = form.Input()[0].ToString();
+
         }
         private void button1_Click(object sender, EventArgs e)
         {

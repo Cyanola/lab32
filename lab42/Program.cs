@@ -24,26 +24,26 @@ namespace lab42
            
             public struct AdminBuild
         {
-          
-          public string AdminName { get; set; }    
-            public string AdminPost { get; set; }
-          public  int workers { get; set; }
-         public   double Area { get; set; }
-       public     int floors { get; set; }
+
+            public string AdminName;
+            public string AdminPost;
+            public int workers;
+            public double Area;
+            public int floors;
 
         }
         public struct Auto
         {
-           public double speed { get; set; }
-        public    string model { get; set; }
-         public   int weight { get; set; }
+            public double speed;
+            public string model;
+            public int weight;
         }
             public struct Human
             {
-                public string Name { get; set; }
-              public  string Lastname { get; set; }
-               public int Age { get; set; }
-              public  int Height { get; set; }
+            public string Name;
+            public string Lastname;
+            public int Age;
+            public int Height;
 
           
             }
