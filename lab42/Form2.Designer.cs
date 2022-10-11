@@ -518,7 +518,7 @@
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.NumericUpDown numericUpDown6;
         private System.Windows.Forms.NumericUpDown numericUpDown7;
-        private System.Windows.Forms.Button Input_button;
+        private System.Windows.Forms.Button Input_button;S
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button Show_data;

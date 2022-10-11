@@ -15,7 +15,7 @@ namespace lab41
             while (choice != 0)
             {
                 Console.Clear();
-                Console.WriteLine("Выберите номер задания(1-4) и 0, чтобы выйти: ");
+                Console.WriteLine("Выберите номер задания(1-3) и 0, чтобы выйти: ");
                 choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
