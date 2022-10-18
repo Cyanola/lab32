@@ -18,7 +18,7 @@ namespace lab6
         {
             InitializeComponent();
             this.Delete_Data.Enabled = false;
-            this.Show_data.Enabled = true;
+
             this.button1.Enabled = true;
             this.button2.Enabled = false;
           
@@ -87,27 +87,16 @@ namespace lab6
             if (this.button1.Enabled)
             {
                 addest();
-                this.Show_data.Enabled = true;
+                add = true;
+                T2();
+               
                 this.Delete_Data.Enabled = true;
                 this.button1.Enabled = false;
-               add = true;
                 button2.Enabled = true;
                 this.button3.Enabled = true;
             }
         }
 
-        private void Show_data_Click(object sender, EventArgs e)
-        {
-            if (this.Show_data.Enabled)
-            {
-                
-                this.button1.Enabled = false;
-             
-                T2();
-                this.Show_data.Enabled = false;
-                
-            }
-        }
 
         private void Delete_Data_Click(object sender, EventArgs e)
         {
@@ -120,12 +109,6 @@ namespace lab6
                     People.Clear(); this.listBox1.Items.Clear();
                 }
                 delete = false;
-                Human h = new Human();
-                if (h.Name =="" &&h.Post=="" &&h.Age == default(int) )
-                {
-                    this.Show_data.Enabled = false; //скрываем видимость кнопки
-                    MessageBox.Show("Нет элементов для удаления", "Ошибка");
-                }
                 this.Delete_Data.Enabled = false;
                 this.button1.Enabled = true;
                 button2.Enabled = false;
@@ -143,15 +126,6 @@ namespace lab6
                         People.RemoveAt(listBox1.SelectedIndex);
                         listBox1.Items.RemoveAt(listBox1.SelectedIndex);
                     }
-                  Human h = new Human();
-                    if (h.Name == "" && h.Post == "" && h.Age == default(int))
-                    {
-                        this.Show_data.Enabled = false;
-                         button2.Enabled = false;
-                    this.Delete_Data.Enabled = false;
-                        MessageBox.Show("Нет элементов для удаления", "Ошибка");
-
-                    }
                     this.button1.Enabled = true;
                 }
                 catch (Exception err) { MessageBox.Show($"{err.Message}", "Ошибка"); }
@@ -162,7 +136,11 @@ namespace lab6
         {
             ant = true;
             T2();
-            ant = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
