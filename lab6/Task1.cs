@@ -21,10 +21,10 @@ namespace lab6
             this.Sort_.Enabled = false;
         }
       
-        public static string Str_Remove = "";
-        public static int X_remove = default;
+        public static string Str_Remove = ""; //строка для удаления элемента листа
+        public static int X_remove = default; //индекс для удаления элемента листа
 
-        List<string> Food_Basket = new List<string>();
+        List<string> Food_Basket = new List<string>();//объявление лист
 
         private void Add__Click(object sender, EventArgs e)
         {
@@ -61,7 +61,7 @@ namespace lab6
 
         private void Sort__Click(object sender, EventArgs e)
         {
-            if (Food_Basket.Count > 1)
+            if (Food_Basket.Count > 1) //сортировка
             {
                 listBox1.Items.Clear();
                 Food_Basket.Sort();
@@ -95,13 +95,6 @@ namespace lab6
                     listBox1.Items.Remove(Str_Remove);
                   
                 } else MessageBox.Show($"Такого элементa нет в коллекции", "Ошибка");
-                if (Food_Basket.Contains(null))
-                {
-                 
-                    this.Delete.Enabled = false;
-                    this.DeleteIndex.Enabled = false;
-                    this.Sort_.Enabled = false;
-                }
                 textBox2.Clear();
             } catch(Exception err) { MessageBox.Show($"{err.Message}", "Ошибка"); }
         }
@@ -110,18 +103,11 @@ namespace lab6
             try
             {
                 string str = textBox6.Text;
-                if (int.TryParse(str, out X_remove))
+                if (int.TryParse(str, out X_remove))//конвертируем текстбокс в инт
                 {
+                    //если введенный индекс больше количества элементов -1 в листе
                     if (X_remove > Food_Basket.Count - 1) throw new Exception("Элемента с таким индексом не существует!");
                     else Food_Basket.RemoveAt(X_remove); listBox1.Items.RemoveAt(X_remove);
-                  
-                    if (Food_Basket.Contains(null))
-                    {
-                       
-                        this.Delete.Enabled = false;
-                        this.DeleteIndex.Enabled = false;
-                        this.Sort_.Enabled = false;
-                    }
                 }
                 else { MessageBox.Show("Введено нецелочисленное значение!"); }
                 textBox6.Clear();

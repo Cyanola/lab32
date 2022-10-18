@@ -78,10 +78,10 @@ namespace lab6
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(9, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(692, 48);
+            this.label2.Size = new System.Drawing.Size(696, 48);
             this.label2.TabIndex = 12;
             this.label2.Text = "«Разработка пользовательских интерфейсов \r\nдля программирования коллекций на плат" +
     "форме .NET Framework»";

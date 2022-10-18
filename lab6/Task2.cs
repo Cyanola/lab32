@@ -26,18 +26,18 @@ namespace lab6
 
         }
         public static bool delete = false;
-        public static bool add = false;
-        public static bool ant = false;
-        public class Human
+        public static bool add = false; //добавление 3 людей
+        public static bool ant = false; //добавление нового человека
+        public class Human //класс человек
         {
             public string Name { get; set; }
             public int Age { get; set; }
 
             public string Post { get; set; }
         }
-        public void addest()
+        public void addest() //добавление в лист трех челоевк
         {
-            if (!People.Contains(new Human())) 
+            if (!People.Contains(new Human())) //если в листе нет точно таких же объектов класса
             { 
             People.Add(new Human() { Name = comboBox1.Text, Age = (int)numericUpDown1.Value, Post = comboBox2.Text });
             People.Add(new Human() { Name = comboBox4.Text, Age = (int)numericUpDown2.Value, Post = comboBox3.Text });
@@ -46,25 +46,25 @@ namespace lab6
             else MessageBox.Show("Такой элемент уже есть в коллекции", "Ошибка");
 
         }
-        List<Human> People = new List<Human> { };
+        List<Human> People = new List<Human> { };//объявление листа и его инициализация пустыми элементами
         public void T2()
         {
             addest();
-            if (add==true)
+            if (add==true) //если выполняется условие
             {
                 foreach (Human h in People)
                 {
                     string str = h.Name + " " + h.Post + " " + h.Age;
-                    if (this.listBox1.Items.Contains(str)) { }
+                    if (this.listBox1.Items.Contains(str)) { } //если листбокс уже содержит точно такую строку, то ничего
                     else
                     { 
                     this.listBox1.Items.Add(str);
                     }
                 
                 }
-                add = false;
+                add = false;//прекращаем выполнение
             }
-            if (ant == true)
+            if (ant == true) //случай если добавляем 1 человека
             {
                 Human h = new Human();
                 People.Add(new Human() {Name = comboBox7.Text, Age = (int)numericUpDown4.Value, Post = comboBox8.Text });
